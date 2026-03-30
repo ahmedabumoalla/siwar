@@ -20,10 +20,10 @@ export default function Hero() {
           </span>
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-6 leading-tight">
-          نحو جيل مستدام يصنع <br className="hidden md:block" />
-          <span className="text-transparent bg-clip-text bg-linear-to-br from-siwar-green to-siwar-blue">أثراً إيجابياً</span>
-        </h1>
+        <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-6 leading-[1.3] md:leading-[1.65]">
+  نحو جيل مستدام يصنع <br className="hidden md:block" />
+  <span className="text-transparent bg-clip-text bg-linear-to-br from-siwar-green to-siwar-blue">أثراً إيجابياً</span>
+</h1>
         
         <p className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
           سوار هي مبادرتك الرقمية لربط الابتكار التقني بحماية البيئة. انضم إلينا لنفهم كيف نوظف التكنولوجيا لترشيد الموارد وبناء مستقبل أفضل.
