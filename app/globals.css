@@ -28,3 +28,13 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
+/* --- كلاس احترافي لإخفاء شريط التمرير مع الحفاظ على القدرة على التمرير --- */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* لمتصفح إيدج القديم */
+    scrollbar-width: none;  /* لمتصفح فايرفوكس */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* لمتصفحات كروم، سفاري، وإيدج الحديث */
+  }
+}
