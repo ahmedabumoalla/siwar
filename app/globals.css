@@ -6,21 +6,6 @@
   --color-siwar-dark: #064e3b;
   --color-siwar-blue: #0ea5e9;
   --color-siwar-light: #f8fafc;
-
-  /* تعريف حركات الأنيميشن (تم دمجها هنا لتعمل بشكل مثالي مع الإصدار الرابع) */
-  --animate-float-slow: float-slow 15s infinite ease-in-out;
-  --animate-grow-connect: grow-connect 10s infinite ease-in-out;
-
-  @keyframes float-slow {
-    0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.1; }
-    50% { transform: translateY(-20px) translateX(10px); opacity: 0.3; }
-  }
-
-  @keyframes grow-connect {
-    0% { transform: scaleX(0); opacity: 0; }
-    50% { transform: scaleX(1); opacity: 0.1; }
-    100% { transform: scaleX(0); opacity: 0; }
-  }
 }
 
 @layer base {
@@ -28,4 +13,18 @@
     @apply bg-siwar-light text-slate-800;
     direction: rtl;
   }
+}
+
+/* --- الكود القاضي لإخفاء شريط التمرير إجبارياً --- */
+/* وضعناه في الخارج لضمان تطبيقه على كل المتصفحات بأعلى أولوية */
+
+html, body {
+  -ms-overflow-style: none; /* لمتصفح إيدج القديم */
+  scrollbar-width: none; /* لمتصفح فايرفوكس */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* لمتصفحات كروم، سفاري، وإيدج الحديث */
+  width: 0;
+  height: 0;
 }
